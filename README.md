@@ -20,3 +20,34 @@ git clone https://github.com/moltpw/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
+
+### Sublime Text 3
+Sublime Text 3 は `Packages/User` をバックアップしてあります。  
+設定のリストア手順について記載します。
+
+1. Sublime Text 3 を起動
+2. `~/Library/Application Support/Sublime Text 3/Packages/User` が作成されたことを確認する
+3. [Package Control をインストール](https://sublime.wbond.net/installation)して終了
+4. シンボリックリンクを張る
+```
+ln -sf ~/dotfiles/sublime-text/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+```
+5. Sublime Tex 3 を起動
+
+### Ruby
+
+1. インストール
+```
+rbenv install 2.1.5
+```
+2. グローバルに適用
+```
+rbenv global 2.1.5
+```
+
+### Node.js
+
+1. インストール
+```
+nvm install 0.10
+```
