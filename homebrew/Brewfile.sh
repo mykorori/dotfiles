@@ -68,7 +68,6 @@ packages=(
     # Utils
     wget
     curl
-    bc
     openssl
     readline
     pandoc
