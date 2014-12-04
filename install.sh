@@ -22,23 +22,28 @@ error() {
 info "Install Homebrew Packages"
 ./homebrew/Brewfile.sh
 
-info "Setting up prezto"
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-for orrcfile in "$(pwd)"/zsh/prezto-override/*; do
-    ln -sf "$orrcfile" "${ZDOTDIR:-$HOME}/.${orrcfile:t}"
-done
-info "Set Homebrew's Zsh as your default shell:"
-echo "Add homebrew's zsh path to /etc/shells."
-echo "After,"
-echo "$ chsh -s /usr/local/bin/zsh"
+if [[ ! -d ~/.zprezto ]]; then
+    info "Setting up prezto"
+
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+    setopt EXTENDED_GLOB
+    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+        ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    done
+    for orrcfile in "$(pwd)"/zsh/prezto-override/*; do
+        ln -sf "$orrcfile" "${ZDOTDIR:-$HOME}/.${orrcfile:t}"
+    done
+
+    info "Set Homebrew's Zsh as your default shell:"
+    echo "Add homebrew's zsh path to /etc/shells."
+    echo "After,"
+    echo "$ chsh -s /usr/local/bin/zsh"
+fi
 
 info "Enable dotfiles, make symlink to ' ${HOME}' directory"
-ls -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
-ls -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"
+ln -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
+ln -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"
 
 if [[ ! -d  ~/.tmux/plugins/tmux-powerline ]]; then
     info "Install tmux-powerline"

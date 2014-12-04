@@ -7,17 +7,20 @@
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+    source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 function precmd () {
-   z --add "$(pwd -P)"
+    z --add "$(pwd -P)"
 }
 
 # nvm
-[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
+source $(brew --prefix nvm)/nvm.sh
+if type nvm  > /dev/null 2>&1; then
+    nvm use 0.10
+fi
 
 # rbenv
 export PATH=$HOME/.rbenv/shims:$PATH

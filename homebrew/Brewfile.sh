@@ -45,6 +45,7 @@ packages=(
     # Language
     ghc
     cabal-install
+    nvm
     rbenv
     ruby-build
     elixir
