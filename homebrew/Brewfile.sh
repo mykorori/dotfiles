@@ -50,7 +50,7 @@ packages=(
     elixir
     dart
     dartium
-    php54
+    php54 --with-apache
     lua
     python
 
@@ -62,8 +62,14 @@ packages=(
     tmux-mem-cpu-load
 
     # Git
-    git   
+    git
     tig
+
+    # DB
+    mysql
+    redis
+    mongodb
+    leveldb
 
     # Utils
     wget
@@ -95,7 +101,6 @@ apps=(
     sublime-text3
 
     # Communication
-    slack
     skype
 
     # VM    
@@ -110,6 +115,7 @@ apps=(
     filezilla
     onyx
     skitch
+    mysqlworkbench
 )
 
 echo "installing apps..."
