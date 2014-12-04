@@ -112,6 +112,7 @@ apps=(
 
     # etc
     karabiner
+    google-japanese-ime
     appcleaner
     dash
     filezilla
