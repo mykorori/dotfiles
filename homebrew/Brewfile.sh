@@ -55,7 +55,7 @@ packages=(
     python
 
     # Editor
-    vim --with-lua
+    macvim --with-lua --with-luajit --env-std --override-system-vim
 
     # Multiplexe
     tmux

@@ -46,7 +46,8 @@ ln -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
 ln -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"
 ln -si "$(pwd)/iterm/com.googlecode.iterm2.plist" "${ZDOTDIR:-$HOME}/Library/Preferences/com.googlecode.iterm2.plist"
 
-if [[ ! -d  ~/.tmux/plugins/tmux-powerline ]]; then
-    info "Install tmux-powerline"
-    git clone https://github.com/erikw/tmux-powerline.git ~/.tmux/plugins/tmux-powerline
+printf "Install powerline? [Y/n]: " && read ans
+if [ "${ans}" = "Y" ]; then
+    pip install git+git://github.com/Lokaltog/powerline
+    pip install psutil
 fi
