@@ -50,7 +50,6 @@ packages=(
     elixir
     dart
     dartium
-    php54 --with-apache
     lua
     python
 
@@ -80,6 +79,8 @@ packages=(
     z
     the_silver_searcher
     peco
+
+    php54 --with-apache
 )
 
 echo "installing binaries..."
