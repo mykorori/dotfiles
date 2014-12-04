@@ -8,18 +8,17 @@ My dotfiles repos.
 
 1. Xcode をインストール
 2. Xcode Command Line Tools をインストール
-```
-xcode-select --install
-```
+
+    xcode-select --install
+
 3. リポジトリをクローン
-```
-git clone https://github.com/moltpw/dotfiles.git ~/dotfiles
-```
+
+    git clone https://github.com/moltpw/dotfiles.git ~/dotfiles
+
 4. インストールスクリプトを実行
-```
-cd ~/dotfiles
-./install.sh
-```
+
+    cd ~/dotfiles
+    ./install.sh
 
 ### Sublime Text 3
 Sublime Text 3 は `Packages/User` をバックアップしてあります。  
@@ -29,25 +28,23 @@ Sublime Text 3 は `Packages/User` をバックアップしてあります。
 2. `~/Library/Application Support/Sublime Text 3/Packages/User` が作成されたことを確認する
 3. [Package Control をインストール](https://sublime.wbond.net/installation)して終了
 4. シンボリックリンクを張る
-```
-ln -sf ~/dotfiles/sublime-text/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-```
+
+    ln -sf ~/dotfiles/sublime-text/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
 5. Sublime Tex 3 を起動
 
 ### Ruby
 
 1. インストール
-```
-rbenv install 2.1.5
-```
+
+    rbenv install 2.1.5
+
 2. グローバルに適用
-```
-rbenv global 2.1.5
-```
+
+    rbenv global 2.1.5
 
 ### Node.js
 
 1. インストール
-```
-nvm install 0.10
-```
+
+    nvm install 0.10
