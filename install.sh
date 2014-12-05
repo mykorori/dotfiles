@@ -44,7 +44,6 @@ fi
 info "Enable dotfiles, make symlink to ' ${HOME}' directory"
 ln -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
 ln -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"
-ln -si "$(pwd)/iterm/com.googlecode.iterm2.plist" "${ZDOTDIR:-$HOME}/Library/Preferences/com.googlecode.iterm2.plist"
 
 printf "Install powerline? [Y/n]: " && read ans
 if [ "${ans}" = "Y" ]; then
