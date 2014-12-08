@@ -31,9 +31,6 @@ if [[ ! -d ~/.zprezto ]]; then
     for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
-    for orrcfile in "$(pwd)"/zsh/prezto-override/*; do
-        ln -sf "$orrcfile" "${ZDOTDIR:-$HOME}/.${orrcfile:t}"
-    done
 
     info "Set Homebrew's Zsh as your default shell:"
     echo "Add homebrew's zsh path to /etc/shells."
@@ -41,12 +38,20 @@ if [[ ! -d ~/.zprezto ]]; then
     echo "$ chsh -s /usr/local/bin/zsh"
 fi
 
-info "Enable dotfiles, make symlink to ' ${HOME}' directory"
-ln -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
-ln -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"
+printf "Symlink prezto-override? [Y/n]: " && read ans
+if [ "${ans}" = "Y" ]; then
+    setopt EXTENDED_GLOB
+    for orrcfile in "$(pwd)"/zsh/prezto-override/*; do
+        ln -sf "$orrcfile" "${ZDOTDIR:-$HOME}/.${orrcfile:t}"
+    done
+fi
 
 printf "Install powerline? [Y/n]: " && read ans
 if [ "${ans}" = "Y" ]; then
     pip install git+git://github.com/Lokaltog/powerline
     pip install psutil
 fi
+
+info "Enable dotfiles, make symlink to ' ${HOME}' directory"
+ln -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
+ln -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"

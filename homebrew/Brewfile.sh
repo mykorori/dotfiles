@@ -120,7 +120,6 @@ apps=(
     onyx
     skitch
     mysqlworkbench
-    hyperswitch
 )
 
 echo "installing apps..."
