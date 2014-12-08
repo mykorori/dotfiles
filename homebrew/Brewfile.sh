@@ -82,6 +82,7 @@ packages=(
     peco
 
     php54 --with-apache
+    composer
 )
 
 echo "installing binaries..."
@@ -119,6 +120,7 @@ apps=(
     onyx
     skitch
     mysqlworkbench
+    hyperswitch
 )
 
 echo "installing apps..."
