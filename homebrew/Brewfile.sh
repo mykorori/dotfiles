@@ -1,4 +1,4 @@
-# Refer to:
+## Refer to:
 # https://github.com/tcnksm/dotfiles/blob/master/homebrew/install.sh
 
 # Check Homebrew
@@ -49,6 +49,7 @@ packages=(
     rbenv
     ruby-build
     elixir
+    go
     dart
     dartium
     lua
@@ -57,7 +58,7 @@ packages=(
     # Editor
     macvim --with-lua --with-luajit --env-std --override-system-vim
 
-    # Multiplexe
+    # Multiplexer
     tmux
     tmux-mem-cpu-load
 

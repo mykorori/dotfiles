@@ -2,7 +2,7 @@
 # Executes commands at the start of an interactive session.
 #
 # Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   yukiyo <yuki@giamnote.net>
 #
 
 # Source Prezto.
@@ -23,4 +23,8 @@ if type nvm  > /dev/null 2>&1; then
 fi
 
 # rbenv
-export PATH=$HOME/.rbenv/shims:$PATH
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# peco
+for f (~/dotfiles/zsh/peco-sources/*) source "${f}" # load peco sources
+bindkey '^r' peco-select-history

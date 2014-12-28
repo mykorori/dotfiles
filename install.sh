@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Refer to:
+## Refer to:
 # https://github.com/tcnksm/dotfiles/blob/master/bootstrap.sh
 
 cd "$(dirname "$0")"
