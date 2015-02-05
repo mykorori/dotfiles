@@ -1,4 +1,12 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Alignment",
@@ -7,7 +15,6 @@
 		"AutoFileName",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
-		"CakePHP (tmbundle)",
 		"Can I Use",
 		"CSS Snippets",
 		"DocBlockr",
@@ -23,6 +30,7 @@
 		"Markdown Preview",
 		"MarkdownEditing",
 		"orgmode",
+		"Package Control",
 		"RecentActiveFiles",
 		"Sass",
 		"SideBarEnhancements",
@@ -32,7 +40,6 @@
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
-		"SublimeLinter-php",
 		"Syntax Highlighting for Sass",
 		"Theme - Asphalt",
 		"Theme - Cobalt2",

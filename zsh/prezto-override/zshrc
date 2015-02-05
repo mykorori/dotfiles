@@ -18,6 +18,7 @@ function precmd () {
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
 if type nvm  > /dev/null 2>&1; then
     nvm use 0.10
 fi

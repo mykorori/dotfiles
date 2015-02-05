@@ -38,6 +38,7 @@ packages=(
 
     # Tools
     grep
+    gsed
 
     # Shell
     zsh
@@ -53,7 +54,7 @@ packages=(
     dart
     dartium
     lua
-    python
+    python3
 
     # Editor
     macvim --with-lua --with-luajit --env-std --override-system-vim
@@ -82,8 +83,13 @@ packages=(
     the_silver_searcher
     peco
 
-    php54 --with-apache
-    composer
+    # Container
+    docker
+    boot2docker
+
+    # PHP
+    # php54 --with-apache
+    # composer
 )
 
 echo "installing binaries..."
@@ -102,21 +108,23 @@ apps=(
     iterm2
 
     # Editor
+    atom
     sublime-text3
+    coteditor
 
     # Communication
     skype
 
-    # VM    
+    # VM
     virtualbox
     vagrant
     vagrant-manager
+    chefdk
 
     # etc
     karabiner
     google-japanese-ime
     appcleaner
-    dash
     filezilla
     onyx
     skitch

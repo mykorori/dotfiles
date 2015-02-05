@@ -89,10 +89,9 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"SublimeLinter",
 		"Markdown",
-		"SublimeLinter-php"
+		"SublimeLinter",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
