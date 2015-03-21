@@ -55,3 +55,10 @@ fi
 info "Enable dotfiles, make symlink to ' ${HOME}' directory"
 ln -si "$(pwd)/tmux/.tmux.conf" "${ZDOTDIR:-$HOME}/.tmux.conf"
 ln -si "$(pwd)/tig/.tigrc" "${ZDOTDIR:-$HOME}/.tigrc"
+
+printf "Symlink shell-scripts? [Y/n]: " && read ans
+if [ "${ans}" = "Y" ]; then
+    for shfile in "$(pwd)"/zsh/shell-scripts/^README.md(.N); do
+        ln -sf "$shfile" "/usr/local/bin/${shfile:t}"
+    done
+fi

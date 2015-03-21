@@ -82,16 +82,16 @@
 	"font_options":
 	[
 	],
-	"font_size": 15,
+	"font_size": 14,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Markdown",
 		"SublimeLinter",
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"indent_guide_options":
 	[

@@ -2,11 +2,6 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"Alignment",
@@ -31,6 +26,7 @@
 		"MarkdownEditing",
 		"orgmode",
 		"Package Control",
+		"RailsCasts Colour Scheme",
 		"RecentActiveFiles",
 		"Sass",
 		"SideBarEnhancements",
@@ -46,7 +42,6 @@
 		"Theme - Farzher",
 		"Theme - itg.flat",
 		"Tomorrow Color Schemes",
-		"TypeScript",
 		"Underscorejs snippets",
 		"zenburn"
 	]
