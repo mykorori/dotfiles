@@ -9,3 +9,4 @@ sublime-text/User/Package Control.ca-certs/
 sublime-text/User/Package Control.merged-ca-bundle
 sublime-text/User/Package Control.user-ca-bundle
 *.cache
+atom/packages

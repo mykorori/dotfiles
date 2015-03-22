@@ -51,7 +51,21 @@ Sublime Text 3 は `Packages/User` をバックアップしてあります。
 
         ln -sf ~/dotfiles/sublime-text/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
-  5. Sublime Tex 3 を起動
+  5. Sublime Text 3 を起動
+
+### Atom
+
+  1. シンボリックリンクを張る
+
+        ln -sf ~/dotfiles/atom ~/.atom
+
+  2. apm にログイン
+
+        apm login
+
+  3. apm からインストール
+
+        apm stars --installed
 
 ### Ruby
 
@@ -67,4 +81,4 @@ Sublime Text 3 は `Packages/User` をバックアップしてあります。
 
   1. インストール
 
-        nvm install 0.10
+        nvm install iojs
