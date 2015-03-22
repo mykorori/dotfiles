@@ -65,7 +65,7 @@ Sublime Text 3 は `Packages/User` をバックアップしてあります。
 
   3. apm からインストール
 
-        apm stars --installed
+        apm stars --install
 
 ### Ruby
 
