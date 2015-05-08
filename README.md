@@ -71,11 +71,11 @@ Sublime Text 3 は `Packages/User` をバックアップしてあります。
 
   1. インストール
 
-        rbenv install 2.1.5
+        rbenv install 2.2.0
 
   2. グローバルに適用
 
-        rbenv global 2.1.5
+        rbenv global 2.2.0
 
 ### Node.js
 

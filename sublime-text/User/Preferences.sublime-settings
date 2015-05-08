@@ -33,7 +33,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/zenburn (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/zenburn (SL).tmTheme",
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
@@ -89,7 +89,6 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"SublimeLinter",
 		"Vintage",
 		"Markdown"
 	],

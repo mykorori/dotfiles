@@ -7,7 +7,8 @@
     preferredLineLength: 100
     scrollPastEnd: true
     softWrap: true
-    fontSize: 14
+    fontSize: 13
+    tabLength: 4
   core:
     themes: [
       "one-dark-ui"
@@ -29,6 +30,15 @@
     js_indent_size: 4
     html_indent_size: 4
     css_indent_size: 4
+  "linter-scalac":
+    scalacExecutablePath: "/usr/local/bin"
+  docblockr: {}
+  "linter-tslint": {}
+  "markdown-preview": {}
+".haskell.latex.tex.text":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
 ".html.php.text":
   editor:
     preferredLineLength: 100
@@ -36,10 +46,40 @@
 ".js.regexp.source":
   editor:
     preferredLineLength: 100
+".cabal.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".source.ts":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".shell.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
 ".plain.text":
   editor:
     preferredLineLength: 100
 ".js.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".shell-session.text":
+  editor:
+    preferredLineLength: 100
+".json.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".pyjade.source":
+  editor:
+    preferredLineLength: 100
+".jade.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 2
+".haskell.source":
   editor:
     preferredLineLength: 100
     tabLength: 4

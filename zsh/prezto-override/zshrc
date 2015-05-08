@@ -29,3 +29,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # peco
 for f (~/dotfiles/zsh/peco-sources/*) source "${f}" # load peco sources
 bindkey '^r' peco-select-history
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

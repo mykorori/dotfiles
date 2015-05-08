@@ -46,13 +46,11 @@ packages=(
     # Language
     ghc
     cabal-install
+    scala
     nvm
     rbenv
     ruby-build
-    elixir
     go
-    dart
-    dartium
     lua
     python3
 
@@ -67,12 +65,6 @@ packages=(
     git
     tig
 
-    # DB
-    mysql
-    redis
-    mongodb
-    leveldb
-
     # Utils
     wget
     curl
@@ -82,14 +74,6 @@ packages=(
     z
     the_silver_searcher
     peco
-
-    # Container
-    docker
-    boot2docker
-
-    # PHP
-    # php54 --with-apache
-    # composer
 )
 
 echo "installing binaries..."
@@ -100,8 +84,7 @@ brew install brew-cask
 
 apps=(
     # Browser
-    google-chrome
-    firefox-ja
+    google-chrome-canary
     firefoxdeveloperedition-ja
 
     # Terminal
@@ -119,7 +102,6 @@ apps=(
     virtualbox
     vagrant
     vagrant-manager
-    chefdk
 
     # etc
     karabiner
