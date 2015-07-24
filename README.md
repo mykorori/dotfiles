@@ -67,16 +67,6 @@ Sublime Text 3 は `Packages/User` をバックアップしてあります。
 
         apm stars --install
 
-### Ruby
-
-  1. インストール
-
-        rbenv install 2.2.0
-
-  2. グローバルに適用
-
-        rbenv global 2.2.0
-
 ### Node.js
 
   1. インストール

@@ -38,7 +38,7 @@ packages=(
 
     # Tools
     grep
-    gsed
+    gnu-sed
 
     # Shell
     zsh
@@ -48,8 +48,7 @@ packages=(
     cabal-install
     scala
     nvm
-    rbenv
-    ruby-build
+    ruby
     go
     lua
     python3
@@ -92,7 +91,6 @@ apps=(
 
     # Editor
     atom
-    sublime-text3
     coteditor
 
     # Communication
@@ -125,7 +123,10 @@ fonts=(
     font-noto-sans-japanese
     font-noto-sans
     font-noto-serif
-    font-fontawesome
+    font-source-han-sans
+    font-source-han-code-jp
+    font-fira-sans
+    font-fira-mono
 )
 
 echo "installing fonts..."
