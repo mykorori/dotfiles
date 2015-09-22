@@ -129,7 +129,7 @@
 	"spell_check": false,
 	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "Cobalt2.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,

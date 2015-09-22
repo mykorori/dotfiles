@@ -20,7 +20,7 @@ function precmd () {
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 if type nvm  > /dev/null 2>&1; then
-    nvm use iojs
+    nvm use node
 fi
 
 # rbenv

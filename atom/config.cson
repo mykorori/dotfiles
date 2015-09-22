@@ -8,10 +8,10 @@
     softWrap: true
     tabLength: 4
     fontFamily: "Ubuntu Mono"
+    fontSize: 18
   core:
-    themes: [
-      "atom-material-ui"
-      "one-dark-syntax"
+    disabledPackages: [
+      "vim-mode"
     ]
   "exception-reporting":
     userId: "9df38fa1-e8a2-691f-e552-1227b5d97e3c"
@@ -30,15 +30,19 @@
   docblockr: {}
   "linter-tslint": {}
   "markdown-preview": {}
-  "one-dark-ui": {}
+  "one-dark-ui":
+    fontSize: 14
   "ide-haskell": {}
   "haskell-ghc-mod": {}
   "atom-material-ui":
     depth: true
     panelContrast: true
     showTabIcons: true
-    tabSize: "Small"
     compactTreeView: true
+    rippleAccentColor: true
+    tabSize: "Small"
+  jumpy: {}
+  "vim-mode": {}
 ".haskell.latex.tex.text":
   editor:
     preferredLineLength: 100
@@ -48,6 +52,9 @@
     preferredLineLength: 100
     tabLength: 4
 ".js.regexp.source":
+  editor:
+    preferredLineLength: 100
+".source.ts.tsx":
   editor:
     preferredLineLength: 100
 ".haskell.source":
