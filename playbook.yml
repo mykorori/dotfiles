@@ -5,7 +5,7 @@
   roles:
     - homebrew
     - homebrew-cask
-    - shell
+    - dotfiles
   vars:
     homebrew_repositories:
     homebrew_packages:
