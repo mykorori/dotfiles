@@ -28,7 +28,7 @@ My dotfiles repos.
         cd ~/dotfiles
         ansible-playbook -i hosts playbook.yml
 
-  6. fish をログインシェルに設定
+  6. zsh をログインシェルに設定
 
         sudo vi /etc/shells
         cat /etc/shells
@@ -42,5 +42,6 @@ My dotfiles repos.
         /bin/sh
         /bin/tcsh
         /bin/zsh
+        /usr/local/bin/zsh
         /usr/local/bin/fish
-        chsh -s /usr/local/bin/fish
+        chsh -s /usr/local/bin/zsh
