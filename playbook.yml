@@ -9,6 +9,8 @@
   vars:
     homebrew_repositories:
     homebrew_packages:
+      - zsh
+      - fish
       - git
       - tig
       - heroku-toolbelt
@@ -16,12 +18,14 @@
       - node
       - ghc
       - cabal-install
-      - scala
+      # El Capitan 未対応
+      # - scala
       - ruby
       - go
       - lua
       - luajit
       - python
+      - tmux
       - the_silver_searcher
       - { name: vim, install_options: [override-system-vi, with-lua, with-luajit] }
       - pandoc
@@ -39,7 +43,8 @@
       - vagrant
       - karabiner
       - appcleaner
-      - onyx
+      # El Capitan 未対応
+      # - onyx
       - java
     homebrew_cask_fonts:
       - font-ubuntu
@@ -47,14 +52,19 @@
       - font-noto-sans-japanese
       - font-noto-sans
       - font-noto-serif
-      - font-source-han-sans
-      - font-source-han-code-jp
+      # なぜか入らない
+      # - font-source-han-sans
+      # - font-source-han-code-jp
     dotfiles:
-      - { path: $HOME/dotfiles/fish/fish/config.fish, dest: $HOME/.config/fish/config.fish }
-      - { path: $HOME/dotfiles/fish/omf, dest: $HOME/.config/omf }
-      - { path: $HOME/dotfiles/atom, dest: $HOME/.atom }
-      - { path: $HOME/dotfiles/tmux/tmux.conf, dest: $HOME/.tmux.conf }
-      - { path: $HOME/dotfiles/tig/tigrc, dest: $HOME/.tigrc }
+      - { path: ~/dotfiles/zsh/prezto-override/zpreztorc, dest: ~/.zpreztorc }
+      - { path: ~/dotfiles/zsh/prezto-override/zprofile, dest: ~/.zprofile }
+      - { path: ~/dotfiles/zsh/prezto-override/zshrc, dest: ~/.zshrc }
+      # oh-my-fish が消えた
+      # - { path: ~/dotfiles/fish/fish/config.fish, dest: ~/.config/fish/config.fish }
+      # - { path: ~/dotfiles/fish/omf, dest: ~/.config/omf }
+      - { path: ~/dotfiles/atom, dest: ~/.atom }
+      - { path: ~/dotfiles/tmux/tmux.conf, dest: ~/.tmux.conf }
+      - { path: ~/dotfiles/tig/tigrc, dest: ~/.tigrc }
     powerline:
-      - git+git://github.com/Lokaltog/powerline
+      - powerline-status
       - psutil

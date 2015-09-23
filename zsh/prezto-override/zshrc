@@ -16,16 +16,6 @@ function precmd () {
     z --add "$(pwd -P)"
 }
 
-# nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-if type nvm  > /dev/null 2>&1; then
-    nvm use node
-fi
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # peco
 for f (~/dotfiles/zsh/peco-sources/*) source "${f}" # load peco sources
 bindkey '^r' peco-select-history

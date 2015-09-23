@@ -47,21 +47,42 @@
   editor:
     preferredLineLength: 100
     tabLength: 4
+".source.ts.tsx":
+  editor:
+    preferredLineLength: 100
+".js.regexp.source":
+  editor:
+    preferredLineLength: 100
 ".html.php.text":
   editor:
     preferredLineLength: 100
     tabLength: 4
-".js.regexp.source":
-  editor:
-    preferredLineLength: 100
-".source.ts.tsx":
-  editor:
-    preferredLineLength: 100
-".haskell.source":
+".source.ts":
   editor:
     preferredLineLength: 100
     tabLength: 4
-".cabal.source":
+".source.yaml":
+  editor:
+    preferredLineLength: 100
+    tabLength: 2
+".jade.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 2
+".pyjade.source":
+  editor:
+    preferredLineLength: 100
+".shell-session.text":
+  editor:
+    preferredLineLength: 100
+".js.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".plain.text":
+  editor:
+    preferredLineLength: 100
+".shell.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
@@ -69,32 +90,11 @@
   editor:
     preferredLineLength: 100
     tabLength: 2
-".shell.source":
+".cabal.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
-".plain.text":
-  editor:
-    preferredLineLength: 100
-".js.source":
-  editor:
-    preferredLineLength: 100
-    tabLength: 4
-".shell-session.text":
-  editor:
-    preferredLineLength: 100
-".pyjade.source":
-  editor:
-    preferredLineLength: 100
-".jade.source":
-  editor:
-    preferredLineLength: 100
-    tabLength: 2
-".source.yaml":
-  editor:
-    preferredLineLength: 100
-    tabLength: 2
-".source.ts":
+".haskell.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
