@@ -11,10 +11,6 @@
     homebrew_packages:
       - zsh
       - fish
-      - git
-      - tig
-      - heroku-toolbelt
-      - peco
       - node
       - ghc
       - cabal-install
@@ -25,6 +21,11 @@
       - lua
       - luajit
       - python
+      - git
+      - tig
+      - ghq
+      - heroku-toolbelt
+      - peco
       - tmux
       - the_silver_searcher
       - { name: vim, install_options: [override-system-vi, with-lua, with-luajit] }

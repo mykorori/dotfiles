@@ -15,6 +15,9 @@
   with_items: dotfiles
   when: dotfiles
 
+- name: Setup ghq
+  shell: git config --global ghq.root "~/src"
+
 - name: Install powerline
   pip: name={{ item }}
   with_items: powerline

@@ -1,7 +1,7 @@
 ## Refer to:
 # http://blog.shibayu36.org/entry/2014/06/27/223538
 
-function peco-select-history() {
+function peco-select-history () {
     local tac
     if which tac > /dev/null; then
         tac="tac"
