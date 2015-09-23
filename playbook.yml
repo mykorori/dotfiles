@@ -1,0 +1,60 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - homebrew
+    - homebrew-cask
+    - shell
+  vars:
+    homebrew_repositories:
+    homebrew_packages:
+      - git
+      - tig
+      - heroku-toolbelt
+      - peco
+      - node
+      - ghc
+      - cabal-install
+      - scala
+      - ruby
+      - go
+      - lua
+      - luajit
+      - python
+      - the_silver_searcher
+      - { name: vim, install_options: [override-system-vi, with-lua, with-luajit] }
+      - pandoc
+      - z
+    homebrew_cask_repositories:
+      - caskroom/versions
+      - caskroom/fonts
+    homebrew_cask_packages:
+      - google-chrome-canary
+      - firefoxdeveloperedition-ja
+      - iterm2
+      - atom
+      - skype
+      - virtualbox
+      - vagrant
+      - karabiner
+      - appcleaner
+      - onyx
+      - java
+    homebrew_cask_fonts:
+      - font-ubuntu
+      - font-ubuntu-mono-powerline
+      - font-noto-sans-japanese
+      - font-noto-sans
+      - font-noto-serif
+      - font-source-han-sans
+      - font-source-han-code-jp
+    dotfiles:
+      - { path: $HOME/dotfiles/fish/fish/config.fish, dest: $HOME/.config/fish/config.fish }
+      - { path: $HOME/dotfiles/fish/omf, dest: $HOME/.config/omf }
+      - { path: $HOME/dotfiles/atom, dest: $HOME/.atom }
+      - { path: $HOME/dotfiles/tmux/tmux.conf, dest: $HOME/.tmux.conf }
+      - { path: $HOME/dotfiles/tig/tigrc, dest: $HOME/.tigrc }
+    powerline:
+      - git+git://github.com/Lokaltog/powerline
+      - psutil

@@ -4,23 +4,31 @@ dotfiles
 My dotfiles repos.
 
 ## Installation
-**当リポジトリの install.sh は OS X で動作します。**
+**現状 OS X 用の Playbook しかありません。**
 
-  1. Xcode をインストール
-  2. Xcode Command Line Tools をインストール
+  1. Xcode Command Line Tools をインストール
 
         xcode-select --install
 
-  3. リポジトリをクローン
+  2. リポジトリをクローン
 
         git clone https://github.com/moltpw/dotfiles.git ~/dotfiles
 
-  4. インストールスクリプトを実行
+  3. Homebrew のインストール
+
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  4. Ansible のインストール
+
+        brew update
+        brew install ansible
+
+  5. Playbook の実行
 
         cd ~/dotfiles
-        ./install.sh
+        ansible-playbook -i hosts playbook.yml
 
-  5. zsh をログインシェルに設定
+  6. fish をログインシェルに設定
 
         sudo vi /etc/shells
         cat /etc/shells
@@ -34,41 +42,5 @@ My dotfiles repos.
         /bin/sh
         /bin/tcsh
         /bin/zsh
-        /usr/local/bin/zsh
-        chsh -s /usr/local/bin/zsh
-
-### Sublime Text 3
-Sublime Text 3 は `Packages/User` をバックアップしてあります。  
-設定のリストア手順について記載します。
-
-  1. Sublime Text 3 を起動
-
-  2. `~/Library/Application Support/Sublime Text 3/Packages/User` が作成されたことを確認する
-
-  3. [Package Control をインストール](https://sublime.wbond.net/installation)して終了
-
-  4. シンボリックリンクを張る
-
-        ln -sf ~/dotfiles/sublime-text/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-
-  5. Sublime Text 3 を起動
-
-### Atom
-
-  1. シンボリックリンクを張る
-
-        ln -sf ~/dotfiles/atom ~/.atom
-
-  2. apm にログイン
-
-        apm login
-
-  3. apm からインストール
-
-        apm stars --install
-
-### Node.js
-
-  1. インストール
-
-        nvm install iojs
+        /usr/local/bin/fish
+        chsh -s /usr/local/bin/fish
