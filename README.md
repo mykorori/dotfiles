@@ -12,7 +12,7 @@ My dotfiles repos.
 
   2. リポジトリをクローン
 
-        git clone https://github.com/moltpw/dotfiles.git ~/dotfiles
+        git clone https://github.com/yukink/dotfiles.git ~/dotfiles
 
   3. Homebrew のインストール
 
