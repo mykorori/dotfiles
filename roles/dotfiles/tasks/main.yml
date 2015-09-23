@@ -1,0 +1,16 @@
+---
+- name: Install Oh-my-fish
+  shell: curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
+
+- name: Symlink dotfiles
+  file: >
+    src={{ item.path }}
+    dest={{ item.dest }}
+    state=link
+  with_items: dotfiles
+  when: dotfiles
+
+- name: Install powerline
+  pip: name={{ item }}
+  with_items: powerline
+  when: powerline

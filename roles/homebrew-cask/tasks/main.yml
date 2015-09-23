@@ -16,6 +16,8 @@
     state={{ item.state | default('present') }}
   with_items: homebrew_cask_packages
   when: homebrew_cask_packages
+  environment:
+    HOMEBREW_CASK_OPTS: --appdir=/Applications
 
 - name: Install/Upgrade Homebrew Cask fonts
   homebrew_cask: >

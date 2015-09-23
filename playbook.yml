@@ -49,3 +49,12 @@
       - font-noto-serif
       - font-source-han-sans
       - font-source-han-code-jp
+    dotfiles:
+      - { path: $HOME/dotfiles/fish/fish/config.fish, dest: $HOME/.config/fish/config.fish }
+      - { path: $HOME/dotfiles/fish/omf, dest: $HOME/.config/omf }
+      - { path: $HOME/dotfiles/atom, dest: $HOME/.atom }
+      - { path: $HOME/dotfiles/tmux/tmux.conf, dest: $HOME/.tmux.conf }
+      - { path: $HOME/dotfiles/tig/tigrc, dest: $HOME/.tigrc }
+    powerline:
+      - git+git://github.com/Lokaltog/powerline
+      - psutil
