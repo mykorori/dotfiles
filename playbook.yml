@@ -16,11 +16,13 @@
       - cabal-install
       # El Capitan 未対応
       # - scala
+      - rust
       - ruby
       - go
       - lua
       - luajit
       - python
+      - python3
       - git
       - tig
       - ghq
@@ -28,7 +30,7 @@
       - peco
       - tmux
       - the_silver_searcher
-      - { name: vim, install_options: [override-system-vi, with-lua, with-luajit] }
+      - { name: macvim, install_options: [env-std, override-system-vim, with-lua, with-luajit, with-python3] }
       - pandoc
       - z
     homebrew_cask_repositories:

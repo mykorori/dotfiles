@@ -19,7 +19,8 @@
     showOnStartup: false
   "atom-typescript":
     compileOnSave: false
-  linter: {}
+  linter:
+    showErrorPanel: false
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
   emmet: {}
@@ -43,6 +44,8 @@
     tabSize: "Small"
   jumpy: {}
   "vim-mode": {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
 ".haskell.latex.tex.text":
   editor:
     preferredLineLength: 100
