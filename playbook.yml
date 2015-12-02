@@ -38,6 +38,7 @@
       - caskroom/fonts
     homebrew_cask_packages:
       - google-chrome-canary
+      - google-chrome
       - firefoxdeveloperedition-ja
       - iterm2
       - atom

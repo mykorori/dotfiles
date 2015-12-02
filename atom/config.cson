@@ -9,9 +9,15 @@
     tabLength: 4
     fontFamily: "Ubuntu Mono"
     fontSize: 18
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
   core:
     disabledPackages: [
       "vim-mode"
+    ]
+    themes: [
+      "one-dark-ui"
+      "gruvbox"
     ]
   "exception-reporting":
     userId: "9df38fa1-e8a2-691f-e552-1227b5d97e3c"
@@ -60,6 +66,10 @@
   editor:
     preferredLineLength: 100
     tabLength: 4
+".source.swift":
+  editor:
+    preferredLineLength: 100
+    softWrapHangingIndent: 4
 ".source.ts":
   editor:
     preferredLineLength: 100
