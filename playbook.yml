@@ -30,7 +30,7 @@
       - peco
       - tmux
       - the_silver_searcher
-      - { name: macvim, install_options: [env-std, override-system-vim, with-lua, with-luajit, with-python3] }
+      - { name: macvim, install_options: [with-override-system-vim, with-lua, with-luajit, with-python3] }
       - pandoc
       - z
     homebrew_cask_repositories:
