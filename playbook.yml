@@ -1,7 +1,6 @@
 - hosts: localhost
   connection: local
   gather_facts: no
-  sudo: no
   roles:
     - homebrew
     - homebrew-cask
@@ -10,12 +9,10 @@
     homebrew_repositories:
     homebrew_packages:
       - zsh
-      - fish
       - node
       - ghc
       - cabal-install
-      # El Capitan 未対応
-      # - scala
+      - scala
       - rust
       - ruby
       - go
@@ -33,13 +30,16 @@
       - { name: macvim, install_options: [with-override-system-vim, with-lua, with-luajit, with-python3] }
       - pandoc
       - z
+      - iftop
+      - cowsay
+      - fortune
+      - htop
     homebrew_cask_repositories:
       - caskroom/versions
       - caskroom/fonts
     homebrew_cask_packages:
       - google-chrome-canary
       - google-chrome
-      - firefoxdeveloperedition-ja
       - iterm2
       - atom
       - skype
@@ -47,26 +47,19 @@
       - vagrant
       - karabiner
       - appcleaner
-      - kindle
-      # El Capitan 未対応
-      # - onyx
-      - java
+      - onyx
     homebrew_cask_fonts:
       - font-ubuntu
-      - font-ubuntu-mono-powerline
-      - font-noto-sans-japanese
+      - font-ubuntu-mono-derivative-powerline
+      - font-noto-sans-cjk-jp
       - font-noto-sans
       - font-noto-serif
-      # なぜか入らない
-      # - font-source-han-sans
-      # - font-source-han-code-jp
+      - font-source-han-sans
+      - font-source-han-code-jp
     dotfiles:
       - { path: ~/dotfiles/zsh/prezto-override/zpreztorc, dest: ~/.zpreztorc }
       - { path: ~/dotfiles/zsh/prezto-override/zprofile, dest: ~/.zprofile }
       - { path: ~/dotfiles/zsh/prezto-override/zshrc, dest: ~/.zshrc }
-      # oh-my-fish が消えた
-      # - { path: ~/dotfiles/fish/fish/config.fish, dest: ~/.config/fish/config.fish }
-      # - { path: ~/dotfiles/fish/omf, dest: ~/.config/omf }
       - { path: ~/dotfiles/atom, dest: ~/.atom }
       - { path: ~/dotfiles/tmux/tmux.conf, dest: ~/.tmux.conf }
       - { path: ~/dotfiles/tig/tigrc, dest: ~/.tigrc }

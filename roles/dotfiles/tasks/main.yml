@@ -1,10 +1,6 @@
 ---
 - name: Install Prezto
-  script: ~/dotfiles/zsh/prezto-setup.zsh creates=~/.zprezto
-
-# Oh-my-fish が消えた
-# - name: Install Oh-my-fish
-#   shell: curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
+  command: zsh ~/dotfiles/zsh/prezto-setup.zsh creates=~/.zprezto
 
 - name: Symlink dotfiles
   file: >
@@ -12,13 +8,13 @@
     dest={{ item.dest }}
     state=link
     force=yes
-  with_items: dotfiles
-  when: dotfiles
+  with_items: '{{ dotfiles }}'
+  when: '{{ dotfiles }}'
 
 - name: Setup ghq
   shell: git config --global ghq.root "~/src"
 
 - name: Install powerline
   pip: name={{ item }}
-  with_items: powerline
-  when: powerline
+  with_items: '{{ powerline }}'
+  when: '{{ powerline }}'

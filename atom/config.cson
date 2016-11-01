@@ -1,113 +1,216 @@
 "*":
-  editor:
-    invisibles: {}
-    showIndentGuide: true
-    showInvisibles: true
-    preferredLineLength: 100
-    scrollPastEnd: true
-    softWrap: true
-    tabLength: 4
-    fontFamily: "Ubuntu Mono"
-    fontSize: 18
-    softWrapAtPreferredLineLength: true
-    softWrapHangingIndent: 4
-  core:
-    disabledPackages: [
-      "vim-mode"
-    ]
-    themes: [
-      "one-dark-ui"
-      "gruvbox"
-    ]
-  "exception-reporting":
-    userId: "9df38fa1-e8a2-691f-e552-1227b5d97e3c"
-  welcome:
-    showOnStartup: false
+  "atom-beautify":
+    css:
+      indent_size: 2
+    general:
+      _analyticsUserId: "a68ff04c-af00-4fb8-9022-0d9577d6f7bc"
+      analytics: false
+    html:
+      indent_size: 2
+    js: {}
+    json:
+      indent_size: 2
+    sass:
+      indent_size: 2
+    scss:
+      indent_size: 2
+    typescript: {}
   "atom-typescript":
     compileOnSave: false
-  linter:
-    showErrorPanel: false
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
-  emmet: {}
-  "atom-beautify":
-    analytics: false
-  "linter-scalac":
-    scalacExecutablePath: "/usr/local/bin"
+    suppressActivationForEditorClasses: [
+      "vim-mode-plus.normal-mode"
+      "vim-mode-plus.visual-mode"
+      "vim-mode-plus.operator-pending-mode"
+      "vim-mode-plus.insert-mode.replace"
+    ]
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "gruvbox-plus-syntax"
+    ]
+    useCustomTitleBar: true
   docblockr: {}
-  "linter-tslint": {}
-  "markdown-preview": {}
-  "one-dark-ui":
-    fontSize: 14
-  "ide-haskell": {}
-  "haskell-ghc-mod": {}
-  "atom-material-ui":
-    depth: true
-    panelContrast: true
-    showTabIcons: true
-    compactTreeView: true
-    rippleAccentColor: true
-    tabSize: "Small"
+  editor:
+    fontFamily: "Ubuntu Mono, Source Han Sans"
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 140
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "9df38fa1-e8a2-691f-e552-1227b5d97e3c"
+  "file-icons": {}
+  "gruvbox-plus-syntax":
+    contrast: "Soft"
   jumpy: {}
-  "vim-mode": {}
+  linter:
+    showErrorPanel: false
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
-".haskell.latex.tex.text":
+  "markdown-preview": {}
+  "one-dark-ui": {}
+  "one-light-ui": {}
+  "tree-view": {}
+  "vim-mode-plus":
+    clearHighlightSearchOnResetNormalMode: true
+    clearRangeMarkerOnResetNormalMode: true
+    flashOnOperateBlacklist: []
+    flashOnUndoRedo: true
+    flashOnUndoRedoDuration: 150
+    highlightSearch: true
+    ignoreCaseForSearch: true
+    ignoreCaseForSearchCurrentWord: true
+    incrementalSearch: true
+    setCursorToStartOfChangeOnUndoRedo: true
+    showHoverOnOperate: true
+    showHoverSearchCounter: true
+    stayOnTransformString: true
+    stayOnYank: true
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+".basic.html.text":
   editor:
-    preferredLineLength: 100
-    tabLength: 4
-".source.ts.tsx":
-  editor:
-    preferredLineLength: 100
-".js.regexp.source":
-  editor:
-    preferredLineLength: 100
-".html.php.text":
-  editor:
-    preferredLineLength: 100
-    tabLength: 4
-".source.swift":
-  editor:
-    preferredLineLength: 100
+    preferredLineLength: 140
     softWrapHangingIndent: 4
-".source.ts":
-  editor:
-    preferredLineLength: 100
-    tabLength: 4
-".source.yaml":
-  editor:
-    preferredLineLength: 100
     tabLength: 2
-".jade.source":
+".c.source":
   editor:
-    preferredLineLength: 100
-    tabLength: 2
-".pyjade.source":
-  editor:
-    preferredLineLength: 100
-".shell-session.text":
-  editor:
-    preferredLineLength: 100
-".js.source":
-  editor:
-    preferredLineLength: 100
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
     tabLength: 4
-".plain.text":
+".c2hs.source":
   editor:
-    preferredLineLength: 100
-".shell.source":
-  editor:
-    preferredLineLength: 100
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
     tabLength: 4
-".json.source":
-  editor:
-    preferredLineLength: 100
-    tabLength: 2
 ".cabal.source":
   editor:
-    preferredLineLength: 100
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".cpp.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".css.scss.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".css.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+".haskell.hint":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".haskell.hint.message":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".haskell.hint.type":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".haskell.latex.tex.text":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
     tabLength: 4
 ".haskell.source":
   editor:
-    preferredLineLength: 100
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
     tabLength: 4
+".hsc2hs.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".html.php.text":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".jade.source":
+  editor:
+    preferredLineLength: 140
+    tabLength: 2
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+".js.regexp.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+".js.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 2
+".json.source":
+  editor:
+    preferredLineLength: 140
+    tabLength: 2
+".plain.text":
+  editor:
+    preferredLineLength: 140
+".pyjade.source":
+  editor:
+    preferredLineLength: 140
+".sass.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".scala.source":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".shell-session.text":
+  editor:
+    preferredLineLength: 140
+".shell.source":
+  editor:
+    preferredLineLength: 140
+    tabLength: 4
+".source.swift":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".source.ts":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".source.ts.tsx":
+  editor:
+    preferredLineLength: 140
+".source.tsx":
+  editor:
+    preferredLineLength: 140
+    softWrapHangingIndent: 4
+    tabLength: 4
+".source.yaml":
+  editor:
+    preferredLineLength: 140
+    tabLength: 2

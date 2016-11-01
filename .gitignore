@@ -11,3 +11,6 @@ sublime-text/User/Package Control.user-ca-bundle
 sublime-text/User/**/*.tmTheme
 *.cache
 atom/packages
+atom/blob-store
+atom/recovery
+playbook.retry
