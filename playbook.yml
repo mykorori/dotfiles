@@ -42,6 +42,7 @@
       - google-chrome
       - iterm2
       - atom
+      - docker
       - skype
       - virtualbox
       - vagrant
