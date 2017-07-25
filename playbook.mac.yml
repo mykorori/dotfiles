@@ -14,7 +14,6 @@
       - node
       - ghc
       - cabal-install
-      - scala
       - rust
       - go
       - python
@@ -24,7 +23,6 @@
       - peco
       - the_silver_searcher
       - pandoc
-      - z
     homebrew_cask_repositories:
       - caskroom/versions
       - caskroom/fonts
@@ -36,9 +34,7 @@
       - skype
       - virtualbox
       - vagrant
-      - karabiner
       - appcleaner
-      - onyx
     homebrew_cask_fonts:
       - font-ubuntu
       - font-ubuntu-mono-derivative-powerline
