@@ -49,7 +49,7 @@
       - { domain: NSGlobalDomain, key: KeyRepeat, type: int, value: 2 }
       - { domain: NSGlobalDomain, key: NSAutomaticDashSubstitutionEnabled, type: bool, value: false }
       - { domain: NSGlobalDomain, key: NSAutomaticQuoteSubstitutionEnabled, type: bool, value: false }
-      - { domain: com.apple.driver.AppleBluetoothMultitouch.trackpad, key: Clicking, type: bool, value: true }
+      - { domain: com.apple.driver.AppleBluetoothMultitouch.trackpad, key: Clicking, type: int, value: 1 }
       - { domain: com.apple.driver.AppleBluetoothMultitouch.trackpad, key: TrackpadThreeFingerDrag, type: bool, value: true }
       - { domain: com.apple.dock, key: showMissionControlGestureEnabled, type: bool, value: true }
       - { domain: com.apple.dock, key: showAppExposeGestureEnabled, type: bool, value: true }
