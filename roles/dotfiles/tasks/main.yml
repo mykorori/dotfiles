@@ -1,7 +1,4 @@
 ---
-- name: Install Prezto
-  command: zsh ~/dotfiles/zsh/prezto-setup.zsh creates=~/.zprezto
-
 - name: Symlink dotfiles
   file: >
     src={{ item.path }}
@@ -11,10 +8,5 @@
   with_items: '{{ dotfiles }}'
   when: '{{ dotfiles }}'
 
-- name: Setup ghq
-  shell: git config --global ghq.root "~/src"
-
-- name: Install powerline
-  pip: name={{ item }}
-  with_items: '{{ powerline }}'
-  when: '{{ powerline }}'
+- name: Install fisherman
+  command: curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher

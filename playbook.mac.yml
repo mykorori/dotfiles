@@ -1,0 +1,76 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  roles:
+    - homebrew
+    - homebrew-cask
+    - macos
+    - dotfiles
+  vars:
+    homebrew_repositories:
+    homebrew_packages:
+      - fish
+      - mobile-shell
+      - node
+      - ghc
+      - cabal-install
+      - scala
+      - rust
+      - go
+      - python
+      - python3
+      - git
+      - ghq
+      - peco
+      - the_silver_searcher
+      - pandoc
+      - z
+    homebrew_cask_repositories:
+      - caskroom/versions
+      - caskroom/fonts
+    homebrew_cask_packages:
+      - google-chrome-canary
+      - google-chrome
+      - iterm2
+      - docker
+      - skype
+      - virtualbox
+      - vagrant
+      - karabiner
+      - appcleaner
+      - onyx
+    homebrew_cask_fonts:
+      - font-ubuntu
+      - font-ubuntu-mono-derivative-powerline
+      - font-noto-sans-cjk-jp
+      - font-noto-sans
+      - font-noto-serif
+      - font-source-han-sans
+      - font-source-han-code-jp
+    defaults_variables:
+      - { domain: NSGlobalDomain, key: AppleICUForce24HourTime, type: bool, value: true }
+      - { domain: NSGlobalDomain, key: InitialKeyRepeat, type: int, value: 15 }
+      - { domain: NSGlobalDomain, key: KeyRepeat, type: int, value: 2 }
+      - { domain: NSGlobalDomain, key: NSAutomaticDashSubstitutionEnabled, type: bool, value: false }
+      - { domain: NSGlobalDomain, key: NSAutomaticQuoteSubstitutionEnabled, type: bool, value: false }
+      - { domain: com.apple.driver.AppleBluetoothMultitouch.trackpad, key: Clicking, type: bool, value: true }
+      - { domain: com.apple.driver.AppleBluetoothMultitouch.trackpad, key: TrackpadThreeFingerDrag, type: bool, value: true }
+      - { domain: com.apple.dock, key: showMissionControlGestureEnabled, type: bool, value: true }
+      - { domain: com.apple.dock, key: showAppExposeGestureEnabled, type: bool, value: true }
+      - { domain: com.apple.dock, key: showDesktopGestureEnabled, type: bool, value: true }
+      - { domain: com.apple.dock, key: showLaunchpadGestureEnabled, type: bool, value: true }
+      - { domain: com.apple.dock, key: autohide, type: bool, value: true }
+      - { domain: com.apple.dock, key: persistent-apps, type: array, value: [] }
+      - { domain: com.apple.dock, key: tilesize, type: int, value: 36 }
+      - { domain: com.apple.finder, key: NewWindowTarget, type: string, value: 'PfHm' }
+      - { domain: com.apple.finder, key: ShowStatusBar, type: bool, value: true }
+      - { domain: com.apple.finder, key: ShowPathbar, type: bool, value: true }
+      - { domain: com.apple.finder, key: ShowTabView, type: bool, value: true }
+      - { domain: com.apple.finder, key: AppleShowAllFiles, type: bool, value: true }
+      - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: 'YES' }
+      - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE H:mm:ss' }
+      - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE H:mm:ss' }
+    dotfiles:
+      - { path: ~/dotfiles/fish/config.fish, dest: ~/.config/fish/config.fish }
+      - { path: ~/dotfiles/fish/fishfile, dest: ~/.config/fish/fishfile }
+      - { path: ~/dotfiles/spacemacs, dest: ~/.spacemacs }

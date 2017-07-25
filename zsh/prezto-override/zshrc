@@ -20,6 +20,7 @@ function precmd () {
 for f (~/dotfiles/zsh/peco-sources/*) source "${f}" # load peco sources
 bindkey '^r' peco-select-history
 bindkey '^]' peco-select-src-ghq
+bindkey '^[' peco-select-git-branches
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

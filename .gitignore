@@ -13,4 +13,4 @@ sublime-text/User/**/*.tmTheme
 atom/packages
 atom/blob-store
 atom/recovery
-playbook.retry
+playbook*.retry

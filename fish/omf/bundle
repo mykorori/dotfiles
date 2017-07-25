@@ -1,8 +1,0 @@
-package brew
-package osx
-package pbcopy
-package peco
-package z
-theme agnoster
-theme default
-theme hogan

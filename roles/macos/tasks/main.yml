@@ -1,0 +1,16 @@
+---
+- name: Set system defaults
+  osx_defaults: >
+    domain={{ item.domain }}
+    key={{ item.key }}
+    type={{ item.type }}
+    value={{ item.value }}
+  with_items: '{{ defaults_variables }}'
+  when: '{{ defaults_variables }}'
+
+- name: Add `/etc/shells`
+  lineinfile: dest=/etc/shells line='/usr/local/bin/fish' state=present owner=root group=wheel mode=0644
+  become: true
+
+- name: Change default shell
+  shell: chsh -s /usr/local/bin/fish
