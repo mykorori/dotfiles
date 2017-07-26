@@ -16,7 +16,7 @@
     state=link
     force=yes
   with_items: '{{ dotfiles|default([]) }}'
-  when: item.path is defined and item.dest is defined
+  when: item.path is defined and item.dest is defined and item != ''
 
 - shell: echo 'fisher --version' | fish
   register: exist_fisherman
