@@ -3,7 +3,7 @@
 if [ "$(uname)" == 'Darwin' ]; then
     OS='mac'
 elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
-	  OS='linux'
+    OS='linux'
 fi
 
 git clone https://github.com/yukink/dotfiles.git ~/dotfiles
