@@ -7,7 +7,7 @@
 - name: Create fish config dir
   file: >
     path=~/.config/fish
-    stat=directory
+    state=directory
 
 - name: Symlink dotfiles
   file: >
