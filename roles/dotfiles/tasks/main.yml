@@ -1,12 +1,26 @@
 ---
+- name: Create XDG config dir
+  file: >
+    path=~/.config
+    state=directory
+
+- name: Create fish config dir
+  file: >
+    path=~/.config/fish
+    stat=directory
+
 - name: Symlink dotfiles
   file: >
     src={{ item.path }}
     dest={{ item.dest }}
     state=link
     force=yes
-  with_items: '{{ dotfiles }}'
-  when: '{{ dotfiles }}'
+  with_items: '{{ dotfiles|default([]) }}'
+  when: item.path is defined and item.dest is defined
+
+- shell: echo 'fisher --version' | fish
+  register: exist_fisherman
 
 - name: Install fisherman
   command: curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+  when: exist_fisherman.stdout.find('fisherman') == -1

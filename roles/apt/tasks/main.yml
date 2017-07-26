@@ -2,7 +2,7 @@
 - name: Add external apt repositories
   apt_repository: repo={{ item }} state=present
   with_items: '{{ apt_repositories }}'
-  when: '{{ apt_repositories }}'
+  when: item is defined
 
 - name: Add nodesource
   command: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -12,10 +12,10 @@
 
 - name: Install/Upgrade apt packages
   apt: >
-    name={{ item.name | default(item) }}
-    state={{ item.state | default('latest') }}
+    name={{ item.name|default(item) }}
+    state={{ item.state|default('latest') }}
   with_items: '{{ apt_packages }}'
-  when: '{{ apt_packages }}'
+  when: item is defined
 
 - name: Install Rust
   command: curl https://sh.rustup.rs -sSf | sh
