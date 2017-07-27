@@ -64,8 +64,7 @@
       - { domain: com.apple.finder, key: ShowTabView, type: bool, value: true }
       - { domain: com.apple.finder, key: AppleShowAllFiles, type: bool, value: true }
       - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: 'YES' }
-      - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE H:mm:ss' }
-      - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE H:mm:ss' }
+      - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE MMM d  h:mm:ss' }
     dotfiles:
       - { path: ~/dotfiles/fish/config.fish, dest: ~/.config/fish/config.fish }
       - { path: ~/dotfiles/fish/fishfile, dest: ~/.config/fish/fishfile }

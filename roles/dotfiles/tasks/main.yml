@@ -9,6 +9,11 @@
     path=~/.config/fish
     state=directory
 
+- name: Create user bin dir
+  file: >
+    path=~/bin
+    state=directory
+
 - name: Symlink dotfiles
   file: >
     src={{ item.path }}

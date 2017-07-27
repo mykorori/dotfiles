@@ -3,7 +3,11 @@ set -gx GOPATH $HOME
 set -gx GHQ_ROOT $HOME/src
 
 # PATH
-set -gx PATH $GOPATH/bin $HOME/.Pokemon-Terminal $PATH
+set -gx PATH $GOPATH/bin $PATH
+
+if test (uname) = 'Darwin'
+  set -gx PATH $HOME/.Pokemon-Terminal $PATH
+end
 
 # keybind
 function my_key_bindings
