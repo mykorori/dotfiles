@@ -23,9 +23,9 @@
   with_items: '{{ dotfiles|default([]) }}'
   when: item.path is defined and item.dest is defined and item != ''
 
-- shell: echo 'fisher --version' | fish
+- shell: test -e ~/.config/fisherman; echo $?
   register: exist_fisherman
 
 - name: Install fisherman
   command: curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-  when: exist_fisherman.stdout.find('fisherman') == -1
+  when: exist_fisherman.stdout == 1
