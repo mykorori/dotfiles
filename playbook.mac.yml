@@ -20,7 +20,7 @@
       - python3
       - git
       - ghq
-      - peco
+      - fzf
       - the_silver_searcher
       - pandoc
     homebrew_cask_repositories:
