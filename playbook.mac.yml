@@ -8,6 +8,7 @@
     - dotfiles
   vars:
     homebrew_repositories:
+      - d12frosted/emacs-plus
     homebrew_packages:
       - fish
       - mobile-shell
@@ -23,6 +24,7 @@
       - tig
       - fzf
       - the_silver_searcher
+      - { name: emacs-plus, install_options: [with-natural-title-bars] }
       - pandoc
     homebrew_cask_repositories:
       - caskroom/versions
