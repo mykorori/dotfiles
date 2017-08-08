@@ -24,7 +24,7 @@
       - tig
       - fzf
       - the_silver_searcher
-      - { name: emacs-plus, install_options: [with-natural-title-bars] }
+      - { name: emacs-plus, install_options: [HEAD, with-natural-title-bar] }
       - pandoc
     homebrew_cask_repositories:
       - caskroom/versions
