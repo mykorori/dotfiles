@@ -65,6 +65,8 @@
       - { domain: com.apple.finder, key: AppleShowAllFiles, type: bool, value: true }
       - { domain: com.apple.finder, key: FXPreferredViewStyle, type: string, value: 'clmv' }
       - { domain: com.apple.finder, key: FXPreferredGroupBy, type: string, value: 'Kind' }
+      - { domain: com.apple.screensaver, key: askForPassword, type: int, value: 1 }
+      - { domain: com.apple.screensaver, key: askForPasswordDelay, type: int, value: 5 }
       - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: 'YES' }
       - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE MMM d  h:mm:ss' }
     dotfiles:
