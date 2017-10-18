@@ -11,7 +11,7 @@
       - d12frosted/emacs-plus
     homebrew_packages:
       - fish
-      - mobile-shell
+      - mosh
       - node
       - ghc
       - cabal-install
@@ -32,6 +32,7 @@
     homebrew_cask_packages:
       - google-chrome-canary
       - google-chrome
+      - firefoxdeveloperedition
       - iterm2
       - docker
       - skype

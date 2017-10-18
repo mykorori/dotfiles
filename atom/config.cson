@@ -17,6 +17,8 @@
     typescript: {}
   "atom-clock":
     showClockIcon: true
+  "atom-package-deps":
+    ignored: []
   "atom-typescript":
     compileOnSave: false
   "autocomplete-plus":
@@ -28,6 +30,9 @@
       "vim-mode-plus.insert-mode.replace"
     ]
   core:
+    disabledPackages: [
+      "language-gfm"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
