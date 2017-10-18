@@ -34,6 +34,8 @@
       - google-chrome
       - firefoxdeveloperedition
       - iterm2
+      - atom
+      - visual-studio-code
       - docker
       - skype
       - virtualbox
