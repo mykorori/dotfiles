@@ -1,9 +1,10 @@
 # export
 set -gx GOPATH $HOME
 set -gx GHQ_ROOT $HOME/src
+set -gx DOTNETPATH /etc/paths.d/
 
 # PATH
-set -gx PATH $GOPATH/bin $PATH
+set -gx PATH $DOTONETPATH $GOPATH/bin $PATH
 
 if test (uname) = 'Darwin'
   set -gx PATH $HOME/.Pokemon-Terminal $PATH
