@@ -8,13 +8,11 @@
     - dotfiles
   vars:
     homebrew_repositories:
-      - d12frosted/emacs-plus
     homebrew_packages:
       - fish
       - mosh
       - node
-      - ghc
-      - cabal-install
+      - stack
       - rust
       - go
       - python
@@ -23,27 +21,22 @@
       - ghq
       - tig
       - fzf
-      - the_silver_searcher
-      - { name: emacs-plus, install_options: [HEAD, with-natural-title-bar] }
-      - pandoc
+      - ripgrep
+      - neovim
     homebrew_cask_repositories:
-      - caskroom/versions
-      - caskroom/fonts
+      - homebrew/cask-fonts
     homebrew_cask_packages:
       - google-chrome-canary
       - google-chrome
       - firefoxdeveloperedition
-      - iterm2
-      - atom
+      - hyper
       - visual-studio-code
       - docker
       - skype
-      - virtualbox
-      - vagrant
       - appcleaner
     homebrew_cask_fonts:
       - font-ubuntu
-      - font-ubuntu-mono-derivative-powerline
+      - font-ubuntumono-nerd-font-mono
       - font-noto-sans-cjk-jp
       - font-noto-sans
       - font-noto-serif
@@ -78,4 +71,6 @@
     dotfiles:
       - { path: ~/dotfiles/fish/config.fish, dest: ~/.config/fish/config.fish }
       - { path: ~/dotfiles/fish/fishfile, dest: ~/.config/fish/fishfile }
-      - { path: ~/dotfiles/spacemacs, dest: ~/.spacemacs }
+      - { path: ~/dotfiles/hyper/hyper.js, dest: ~/.hyper.js }
+      - { path: ~/dotfiles/vscode/settings.json, dest: ~/Library/Application Support/Code/User/settings.json }
+      - { path: ~/dotfiles/vscode/locale.json, dest: ~/Library/Application Support/Code/User/locale.json }

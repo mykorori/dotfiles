@@ -1,0 +1,66 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontFamily": "UbuntuMono Nerd Font Mono",
+    "editor.wordWrap": "on",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+
+    // Vim
+    "vim.useSystemClipboard": true,
+    "vim.cursorStylePerMode" : {
+        "normal": "block",
+        "insert": "line"
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<esc>"]
+        },
+        {
+            "before": ["<C-f>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "cursorMove",
+                    "args": {
+                        "to": "right",
+                        "by": "character"
+                    }
+                }
+            ]
+        },
+        {
+            "before": ["<C-n>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "cursorMove",
+                    "args": {
+                        "to": "down",
+                        "by": "character"
+                    }
+                }
+            ]
+        }
+    ],
+
+    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "window.zoomLevel": 0,
+    "gitlens.keymap": "alternate",
+    "gitlens.historyExplorer.enabled": false,
+    "workbench.colorTheme": "Nord",
+    "git.autofetch": true,
+    "tslint.autoFixOnSave": true
+}

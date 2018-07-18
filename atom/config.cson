@@ -29,6 +29,8 @@
       "vim-mode-plus.operator-pending-mode"
       "vim-mode-plus.insert-mode.replace"
     ]
+  "autoupdate-packages":
+    lastUpdateTimestamp: 1522476202027
   core:
     disabledPackages: [
       "language-gfm"
@@ -36,7 +38,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "gruvbox-plus-syntax"
+      "solarized-light-syntax"
     ]
     titleBar: "custom"
   docblockr: {}

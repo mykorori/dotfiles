@@ -9,6 +9,9 @@ fi
 git clone https://github.com/yukink/dotfiles.git ~/dotfiles
 
 if [ "$OS" = "mac" ]; then
+    # create vscode dir
+    mkdir -p ~/Library/Application\ Support/Code/User
+
     xcode-select --install
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew install ansible

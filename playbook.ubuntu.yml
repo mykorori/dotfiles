@@ -26,4 +26,3 @@
     dotfiles:
       - { path: ~/dotfiles/fish/fish/config.fish, dest: ~/.config/fish/config.fish }
       - { path: ~/dotfiles/fish/fishfile, dest: ~/.config/fish/fishfile }
-      - { path: ~/dotfiles/spacemacs, dest: ~/.spacemacs }

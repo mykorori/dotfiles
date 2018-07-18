@@ -30,11 +30,5 @@
   command: curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
   when: exist_fisherman.stdout == 1
 
-- shell: test -e ~/.emacs.d; echo $?
-  register: exist_emacsd
-
-- name: Install spacemacs
-  git: >
-    repo='https://github.com/syl20bnr/spacemacs.git'
-    dest='~/.emacs.d'
-  when: exist_emacsd
+- name: Install vscode extensions
+  command: code --install-extensions ~/dotfiles/vscode/extensions

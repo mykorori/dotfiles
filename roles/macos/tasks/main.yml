@@ -19,8 +19,3 @@
 - name: Change default shell
   shell: chsh -s /usr/local/bin/fish
   when: etc_shells.stdout.find('/usr/local/bin/fish') == -1
-
-- name: Clone pokemon-terminal
-  git: >
-    repo=https://github.com/LazoCoder/Pokemon-Terminal
-    dest=~/.Pokemon-Terminal
