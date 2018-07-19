@@ -24,6 +24,7 @@
       - ripgrep
       - neovim
     homebrew_cask_repositories:
+      - homebrew/cask-versions
       - homebrew/cask-fonts
     homebrew_cask_packages:
       - google-chrome-canary

@@ -30,5 +30,12 @@
   command: curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
   when: exist_fisherman.stdout == 1
 
+- name: Install fish plugins
+  command: fish -c "fisher"
+
 - name: Install vscode extensions
-  command: code --install-extensions ~/dotfiles/vscode/extensions
+  shell: |
+    cat ~/dotfiles/vscode/extensions | while read line
+    do
+      code --install-extension $line
+    done
