@@ -69,6 +69,8 @@
       - { domain: com.apple.screensaver, key: askForPasswordDelay, type: float, value: 5.0 }
       - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: 'YES' }
       - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: 'EEE MMM d  h:mm:ss' }
+      - { domain: com.microsoft.VSCode, key: ApplePressAndHoldEnabled, type: bool, value: false }
+      - { domain: co.zeit.hyper, key: ApplePressAndHoldEnabled, type: bool, value: false }
     dotfiles:
       - { path: ~/dotfiles/fish/config.fish, dest: ~/.config/fish/config.fish }
       - { path: ~/dotfiles/fish/fishfile, dest: ~/.config/fish/fishfile }

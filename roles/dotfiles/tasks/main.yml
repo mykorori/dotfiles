@@ -39,3 +39,10 @@
     do
       code --install-extension $line
     done
+
+- shell: test -e /usr/local/bin/im-select; echo $?
+  register: exist_im-select
+
+- name: Install VSCodeVim extensions
+  shell: curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
+  when: exist_im-select.stdout == 1
