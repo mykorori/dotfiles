@@ -40,7 +40,7 @@
       code --install-extension $line
     done
 
-- shell: test -e /usr/local/bin/im-select; echo $?
+- shell: which im-select; echo $?
   register: exist_imselect
 
 - name: Install VSCodeVim extensions
