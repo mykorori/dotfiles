@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 16,
-    "editor.fontFamily": "UbuntuMono Nerd Font Mono",
+    "editor.fontFamily": "'UbuntuMono Nerd Font Mono', 'TsukuARdGothic-Regular'",
     "editor.wordWrap": "on",
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
@@ -62,5 +62,7 @@
     "gitlens.historyExplorer.enabled": false,
     "workbench.colorTheme": "Nord",
     "git.autofetch": true,
-    "tslint.autoFixOnSave": true
+    "tslint.autoFixOnSave": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.fontLigatures": true
 }
