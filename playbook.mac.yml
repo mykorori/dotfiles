@@ -33,7 +33,7 @@
       - hyper
       - visual-studio-code
       - docker
-      - skype
+      - discord
       - appcleaner
     homebrew_cask_fonts:
       - font-ubuntu
