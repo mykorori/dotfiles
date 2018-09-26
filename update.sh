@@ -10,7 +10,6 @@ cd ~/dotfiles
 git pull
 
 if [ "$OS" = "mac" ]; then
-    brew upgrade
     ansible-playbook -i ~/dotfiles/hosts ~/dotfiles/playbook.mac.yml --ask-become-pass
 elif [ "$OS" = "linux" ]; then
     if [ `which apt` ]; then

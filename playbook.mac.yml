@@ -3,46 +3,9 @@
   gather_facts: no
   roles:
     - homebrew
-    - homebrew-cask
     - macos
     - dotfiles
   vars:
-    homebrew_repositories:
-    homebrew_packages:
-      - fish
-      - mosh
-      - node
-      - stack
-      - rust
-      - go
-      - python
-      - python3
-      - git
-      - ghq
-      - tig
-      - fzf
-      - ripgrep
-      - neovim
-    homebrew_cask_repositories:
-      - homebrew/cask-versions
-      - homebrew/cask-fonts
-    homebrew_cask_packages:
-      - google-chrome-canary
-      - google-chrome
-      - firefoxdeveloperedition
-      - hyper
-      - visual-studio-code
-      - docker
-      - discord
-      - appcleaner
-    homebrew_cask_fonts:
-      - font-ubuntu
-      - font-ubuntumono-nerd-font-mono
-      - font-noto-sans-cjk-jp
-      - font-noto-sans
-      - font-noto-serif
-      - font-source-han-sans
-      - font-source-han-code-jp
     defaults_variables:
       - { domain: NSGlobalDomain, key: AppleICUForce24HourTime, type: bool, value: true }
       - { domain: NSGlobalDomain, key: InitialKeyRepeat, type: int, value: 15 }
