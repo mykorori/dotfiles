@@ -6,7 +6,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     OS='linux'
 fi
 
-git clone https://github.com/yukink/dotfiles.git ~/dotfiles
+git clone https://github.com/mykorori/dotfiles.git ~/dotfiles
 
 if [ "$OS" = "mac" ]; then
     # create vscode dir
