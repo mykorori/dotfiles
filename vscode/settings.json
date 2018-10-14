@@ -7,66 +7,13 @@
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Cake",
     "workbench.colorCustomizations": {
         "statusBar.background": "#88C0D0",
         "statusBar.noFolderBackground": "#88C0D0",
         "statusBar.debuggingBackground": "#88C0D0",
         "statusBar.foreground": "#3B4252"
     },
-
-    // Vim
-    "vim.useSystemClipboard": true,
-    "vim.cursorStylePerMode.normal": "block",
-    "vim.cursorStylePerMode.insert": "line",
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
-    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
-    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
-    "vim.easymotion": true,
-    "vim.visualstar": true,
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": ["#88C0D0", "#3B4252"],
-    "vim.statusBarColors.insert": ["#ECEFF4", "#3B4252"],
-    "vim.statusBarColors.replace": ["#EBCB8B", "#3B4252"],
-    "vim.statusBarColors.visual": ["#8FBCBB", "#3B4252"],
-    "vim.statusBarColors.visualblock": ["#8FBCBB", "#3B4252"],
-    "vim.statusBarColors.visualline": [
-        "#8FBCBB",
-        "#3B4252"
-    ],
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<esc>"]
-        },
-        {
-            "before": ["<C-f>"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "cursorMove",
-                    "args": {
-                        "to": "right",
-                        "by": "character"
-                    }
-                }
-            ]
-        },
-        {
-            "before": ["<C-n>"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "cursorMove",
-                    "args": {
-                        "to": "down",
-                        "by": "character"
-                    }
-                }
-            ]
-        }
-    ],
 
     // git
     "git.autofetch": true,
